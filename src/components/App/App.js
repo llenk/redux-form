@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from '../Form/Form'
+import Form from '../Form/Form';
+import SnackList from '../SnackList/SnackList'
 
 import { connect } from 'react-redux';
 
@@ -18,6 +19,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Form />
+        <SnackList />
       </div>
     );
   }

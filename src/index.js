@@ -7,7 +7,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
-const firstReducer = (state = 0, action) => {
+const firstReducer = (state = [], action) => {
     if (action.type === 'SNACK_SUBMIT') {
         return [...state, action.payload];
     }
